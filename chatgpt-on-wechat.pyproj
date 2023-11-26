@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0de05281-ef27-4fb8-9a78-5ecd93c0cc62}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>app.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="docs\images\aigcopen.png" />
+    <Content Include="docs\images\contact.jpg" />
+    <Content Include="docs\images\group-chat-sample.jpg" />
+    <Content Include="docs\images\image-create-sample.jpg" />
+    <Content Include="docs\images\planet.jpg" />
+    <Content Include="docs\images\single-chat-sample.jpg" />
+    <Content Include="plugins\keyword\test-keyword.png" />
+    <Content Include="requirements-optional.txt" />
+    <Content Include="requirements.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="app.py" />
+    <Compile Include="bot\baidu\baidu_unit_bot.py" />
+    <Compile Include="bot\baidu\baidu_wenxin.py" />
+    <Compile Include="bot\baidu\baidu_wenxin_session.py" />
+    <Compile Include="bot\bot.py" />
+    <Compile Include="bot\bot_factory.py" />
+    <Compile Include="bot\chatgpt\chat_gpt_bot.py" />
+    <Compile Include="bot\chatgpt\chat_gpt_session.py" />
+    <Compile Include="bot\claude\claude_ai_bot.py" />
+    <Compile Include="bot\claude\claude_ai_session.py" />
+    <Compile Include="bot\linkai\link_ai_bot.py" />
+    <Compile Include="bot\openai\open_ai_bot.py" />
+    <Compile Include="bot\openai\open_ai_image.py" />
+    <Compile Include="bot\openai\open_ai_session.py" />
+    <Compile Include="bot\session_manager.py" />
+    <Compile Include="bot\xunfei\xunfei_spark_bot.py" />
+    <Compile Include="bridge\bridge.py" />
+    <Compile Include="bridge\context.py" />
+    <Compile Include="bridge\reply.py" />
+    <Compile Include="channel\channel.py" />
+    <Compile Include="channel\channel_factory.py" />
+    <Compile Include="channel\chat_channel.py" />
+    <Compile Include="channel\chat_message.py" />
+    <Compile Include="channel\terminal\terminal_channel.py" />
+    <Compile Include="channel\wechatcom\wechatcomapp_channel.py" />
+    <Compile Include="channel\wechatcom\wechatcomapp_client.py" />
+    <Compile Include="channel\wechatcom\wechatcomapp_message.py" />
+    <Compile Include="channel\wechatmp\active_reply.py" />
+    <Compile Include="channel\wechatmp\common.py" />
+    <Compile Include="channel\wechatmp\passive_reply.py" />
+    <Compile Include="channel\wechatmp\wechatmp_channel.py" />
+    <Compile Include="channel\wechatmp\wechatmp_client.py" />
+    <Compile Include="channel\wechatmp\wechatmp_message.py" />
+    <Compile Include="channel\wechat\wechaty_channel.py" />
+    <Compile Include="channel\wechat\wechaty_message.py" />
+    <Compile Include="channel\wechat\wechat_channel.py" />
+    <Compile Include="channel\wechat\wechat_message.py" />
+    <Compile Include="channel\wework\run.py" />
+    <Compile Include="channel\wework\wework_channel.py" />
+    <Compile Include="channel\wework\wework_message.py" />
+    <Compile Include="common\const.py" />
+    <Compile Include="common\dequeue.py" />
+    <Compile Include="common\expired_dict.py" />
+    <Compile Include="common\log.py" />
+    <Compile Include="common\package_manager.py" />
+    <Compile Include="common\singleton.py" />
+    <Compile Include="common\sorted_dict.py" />
+    <Compile Include="common\time_check.py" />
+    <Compile Include="common\tmp_dir.py" />
+    <Compile Include="common\token_bucket.py" />
+    <Compile Include="common\utils.py" />
+    <Compile Include="config.py" />
+    <Compile Include="lib\itchat\async_components\contact.py" />
+    <Compile Include="lib\itchat\async_components\hotreload.py" />
+    <Compile Include="lib\itchat\async_components\login.py" />
+    <Compile Include="lib\itchat\async_components\messages.py" />
+    <Compile Include="lib\itchat\async_components\register.py" />
+    <Compile Include="lib\itchat\async_components\__init__.py" />
+    <Compile Include="lib\itchat\components\contact.py" />
+    <Compile Include="lib\itchat\components\hotreload.py" />
+    <Compile Include="lib\itchat\components\login.py" />
+    <Compile Include="lib\itchat\components\messages.py" />
+    <Compile Include="lib\itchat\components\register.py" />
+    <Compile Include="lib\itchat\components\__init__.py" />
+    <Compile Include="lib\itchat\config.py" />
+    <Compile Include="lib\itchat\content.py" />
+    <Compile Include="lib\itchat\core.py" />
+    <Compile Include="lib\itchat\log.py" />
+    <Compile Include="lib\itchat\returnvalues.py" />
+    <Compile Include="lib\itchat\storage\messagequeue.py" />
+    <Compile Include="lib\itchat\storage\templates.py" />
+    <Compile Include="lib\itchat\storage\__init__.py" />
+    <Compile Include="lib\itchat\utils.py" />
+    <Compile Include="lib\itchat\__init__.py" />
+    <Compile Include="plugins\banwords\banwords.py" />
+    <Compile Include="plugins\banwords\lib\WordsSearch.py" />
+    <Compile Include="plugins\banwords\__init__.py" />
+    <Compile Include="plugins\bdunit\bdunit.py" />
+    <Compile Include="plugins\bdunit\__init__.py" />
+    <Compile Include="plugins\dungeon\dungeon.py" />
+    <Compile Include="plugins\dungeon\__init__.py" />
+    <Compile Include="plugins\event.py" />
+    <Compile Include="plugins\finish\finish.py" />
+    <Compile Include="plugins\finish\__init__.py" />
+    <Compile Include="plugins\godcmd\godcmd.py" />
+    <Compile Include="plugins\godcmd\__init__.py" />
+    <Compile Include="plugins\hello\hello.py" />
+    <Compile Include="plugins\hello\__init__.py" />
+    <Compile Include="plugins\keyword\keyword.py" />
+    <Compile Include="plugins\keyword\__init__.py" />
+    <Compile Include="plugins\linkai\linkai.py" />
+    <Compile Include="plugins\linkai\midjourney.py" />
+    <Compile Include="plugins\linkai\summary.py" />
+    <Compile Include="plugins\linkai\utils.py" />
+    <Compile Include="plugins\linkai\__init__.py" />
+    <Compile Include="plugins\plugin.py" />
+    <Compile Include="plugins\plugin_manager.py" />
+    <Compile Include="plugins\role\role.py" />
+    <Compile Include="plugins\role\__init__.py" />
+    <Compile Include="plugins\tool\tool.py" />
+    <Compile Include="plugins\tool\__init__.py" />
+    <Compile Include="plugins\__init__.py" />
+    <Compile Include="translate\baidu\baidu_translate.py" />
+    <Compile Include="translate\factory.py" />
+    <Compile Include="translate\translator.py" />
+    <Compile Include="voice\audio_convert.py" />
+    <Compile Include="voice\azure\azure_voice.py" />
+    <Compile Include="voice\baidu\baidu_voice.py" />
+    <Compile Include="voice\elevent\elevent_voice.py" />
+    <Compile Include="voice\factory.py" />
+    <Compile Include="voice\google\google_voice.py" />
+    <Compile Include="voice\linkai\linkai_voice.py" />
+    <Compile Include="voice\openai\openai_voice.py" />
+    <Compile Include="voice\pytts\pytts_voice.py" />
+    <Compile Include="voice\voice.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bot" />
+    <Folder Include="bot\baidu" />
+    <Folder Include="bot\chatgpt" />
+    <Folder Include="bot\claude" />
+    <Folder Include="bot\linkai" />
+    <Folder Include="bot\openai" />
+    <Folder Include="bot\xunfei" />
+    <Folder Include="bridge" />
+    <Folder Include="channel" />
+    <Folder Include="channel\terminal" />
+    <Folder Include="channel\wechat" />
+    <Folder Include="channel\wechatcom" />
+    <Folder Include="channel\wechatmp" />
+    <Folder Include="channel\wework" />
+    <Folder Include="common" />
+    <Folder Include="docs\" />
+    <Folder Include="docs\images" />
+    <Folder Include="lib\" />
+    <Folder Include="lib\itchat" />
+    <Folder Include="lib\itchat\async_components" />
+    <Folder Include="lib\itchat\components" />
+    <Folder Include="lib\itchat\storage" />
+    <Folder Include="plugins" />
+    <Folder Include="plugins\banwords" />
+    <Folder Include="plugins\banwords\lib" />
+    <Folder Include="plugins\bdunit" />
+    <Folder Include="plugins\dungeon" />
+    <Folder Include="plugins\finish" />
+    <Folder Include="plugins\godcmd" />
+    <Folder Include="plugins\hello" />
+    <Folder Include="plugins\keyword" />
+    <Folder Include="plugins\linkai" />
+    <Folder Include="plugins\role" />
+    <Folder Include="plugins\tool" />
+    <Folder Include="translate" />
+    <Folder Include="translate\baidu" />
+    <Folder Include="voice" />
+    <Folder Include="voice\azure" />
+    <Folder Include="voice\baidu" />
+    <Folder Include="voice\elevent" />
+    <Folder Include="voice\google" />
+    <Folder Include="voice\linkai" />
+    <Folder Include="voice\openai" />
+    <Folder Include="voice\pytts" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>
