@@ -19,15 +19,58 @@
     <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="bot\chatgpt\__pycache__\chat_gpt_session.cpython-39.pyc" />
+    <Content Include="bot\linkai\__pycache__\link_ai_bot.cpython-39.pyc" />
+    <Content Include="bot\__pycache__\bot.cpython-39.pyc" />
+    <Content Include="bot\__pycache__\bot_factory.cpython-39.pyc" />
+    <Content Include="bot\__pycache__\session_manager.cpython-39.pyc" />
+    <Content Include="bridge\__pycache__\bridge.cpython-39.pyc" />
+    <Content Include="bridge\__pycache__\context.cpython-39.pyc" />
+    <Content Include="bridge\__pycache__\reply.cpython-39.pyc" />
+    <Content Include="channel\wechatcom\README.md" />
+    <Content Include="channel\wechatmp\README.md" />
+    <Content Include="channel\wechat\__pycache__\wechat_channel.cpython-39.pyc" />
+    <Content Include="channel\wechat\__pycache__\wechat_message.cpython-39.pyc" />
+    <Content Include="channel\__pycache__\channel.cpython-39.pyc" />
+    <Content Include="channel\__pycache__\channel_factory.cpython-39.pyc" />
+    <Content Include="channel\__pycache__\chat_channel.cpython-39.pyc" />
+    <Content Include="channel\__pycache__\chat_message.cpython-39.pyc" />
+    <Content Include="common\__pycache__\const.cpython-39.pyc" />
+    <Content Include="common\__pycache__\dequeue.cpython-39.pyc" />
+    <Content Include="common\__pycache__\expired_dict.cpython-39.pyc" />
+    <Content Include="common\__pycache__\log.cpython-39.pyc" />
+    <Content Include="common\__pycache__\singleton.cpython-39.pyc" />
+    <Content Include="common\__pycache__\sorted_dict.cpython-39.pyc" />
+    <Content Include="common\__pycache__\time_check.cpython-39.pyc" />
+    <Content Include="common\__pycache__\tmp_dir.cpython-39.pyc" />
+    <Content Include="config-template.json" />
+    <Content Include="config.json" />
+    <Content Include="docker\build.latest.sh" />
+    <Content Include="docker\docker-compose.yml" />
+    <Content Include="docker\Dockerfile.latest" />
+    <Content Include="docker\entrypoint.sh" />
     <Content Include="docs\images\aigcopen.png" />
     <Content Include="docs\images\contact.jpg" />
     <Content Include="docs\images\group-chat-sample.jpg" />
     <Content Include="docs\images\image-create-sample.jpg" />
     <Content Include="docs\images\planet.jpg" />
     <Content Include="docs\images\single-chat-sample.jpg" />
+    <Content Include="plugins\banwords\.gitignore" />
+    <Content Include="plugins\banwords\banwords.txt.template" />
+    <Content Include="plugins\banwords\config.json" />
+    <Content Include="plugins\banwords\config.json.template" />
+    <Content Include="plugins\banwords\lib\__pycache__\WordsSearch.cpython-39.pyc" />
+    <Content Include="plugins\banwords\README.md" />
+    <Content Include="plugins\banwords\__pycache__\banwords.cpython-39.pyc" />
+    <Content Include="plugins\banwords\__pycache__\__init__.cpython-39.pyc" />
     <Content Include="plugins\keyword\test-keyword.png" />
+    <Content Include="plugins\__pycache__\event.cpython-39.pyc" />
+    <Content Include="plugins\__pycache__\plugin.cpython-39.pyc" />
+    <Content Include="plugins\__pycache__\plugin_manager.cpython-39.pyc" />
+    <Content Include="plugins\__pycache__\__init__.cpython-39.pyc" />
     <Content Include="requirements-optional.txt" />
     <Content Include="requirements.txt" />
+    <Content Include="__pycache__\config.cpython-39.pyc" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="app.py" />
@@ -150,18 +193,26 @@
     <Folder Include="bot" />
     <Folder Include="bot\baidu" />
     <Folder Include="bot\chatgpt" />
+    <Folder Include="bot\chatgpt\__pycache__\" />
     <Folder Include="bot\claude" />
     <Folder Include="bot\linkai" />
+    <Folder Include="bot\linkai\__pycache__\" />
     <Folder Include="bot\openai" />
     <Folder Include="bot\xunfei" />
+    <Folder Include="bot\__pycache__\" />
     <Folder Include="bridge" />
+    <Folder Include="bridge\__pycache__\" />
     <Folder Include="channel" />
     <Folder Include="channel\terminal" />
     <Folder Include="channel\wechat" />
     <Folder Include="channel\wechatcom" />
     <Folder Include="channel\wechatmp" />
+    <Folder Include="channel\wechat\__pycache__\" />
     <Folder Include="channel\wework" />
+    <Folder Include="channel\__pycache__\" />
     <Folder Include="common" />
+    <Folder Include="common\__pycache__\" />
+    <Folder Include="docker\" />
     <Folder Include="docs\" />
     <Folder Include="docs\images" />
     <Folder Include="lib\" />
@@ -172,6 +223,8 @@
     <Folder Include="plugins" />
     <Folder Include="plugins\banwords" />
     <Folder Include="plugins\banwords\lib" />
+    <Folder Include="plugins\banwords\lib\__pycache__\" />
+    <Folder Include="plugins\banwords\__pycache__\" />
     <Folder Include="plugins\bdunit" />
     <Folder Include="plugins\dungeon" />
     <Folder Include="plugins\finish" />
@@ -181,6 +234,7 @@
     <Folder Include="plugins\linkai" />
     <Folder Include="plugins\role" />
     <Folder Include="plugins\tool" />
+    <Folder Include="plugins\__pycache__\" />
     <Folder Include="translate" />
     <Folder Include="translate\baidu" />
     <Folder Include="voice" />
@@ -191,6 +245,7 @@
     <Folder Include="voice\linkai" />
     <Folder Include="voice\openai" />
     <Folder Include="voice\pytts" />
+    <Folder Include="__pycache__\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
 </Project>

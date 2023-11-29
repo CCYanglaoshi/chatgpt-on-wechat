@@ -16,7 +16,7 @@ available_setting = {
     "open_ai_api_base": "https://api.openai.com/v1",
     "proxy": "",  # openai使用的代理
     # chatgpt模型， 当use_azure_chatgpt为true时，其名称为Azure上model deployment名称
-    "model": "gpt-3.5-turbo",  # 还支持 gpt-4, gpt-4-turbo, wenxin, xunfei
+    "model": "xunfei",  # 还支持 gpt-4, gpt-4-turbo, wenxin, xunfei
     "use_azure_chatgpt": False,  # 是否使用azure的chatgpt
     "azure_deployment_id": "",  # azure 模型部署名称
     "azure_api_version": "",  # azure api版本
@@ -29,9 +29,9 @@ available_setting = {
     "group_chat_reply_suffix": "",  # 群聊时自动回复的后缀，\n 可以换行
     "group_chat_keyword": [],  # 群聊时包含该关键词则会触发机器人回复
     "group_at_off": False,  # 是否关闭群聊时@bot的触发
-    "group_name_white_list": ["ChatGPT测试群", "ChatGPT测试群2"],  # 开启自动回复的群名称列表
-    "group_name_keyword_white_list": [],  # 开启自动回复的群名称关键词列表
-    "group_chat_in_one_session": ["ChatGPT测试群"],  # 支持会话上下文共享的群名称
+    "group_name_white_list": ["ChatGPT测试群"],  # 开启自动回复的群名称列表
+    "group_name_keyword_white_list": ["ChatGPT测试群"],  # 开启自动回复的群名称关键词列表
+    "group_chat_in_one_session": ["ChatGPT测试群", "BUILD YOUR DREAM","拿三菱，品三茅","AI体验与探索"],  # 支持会话上下文共享的群名称
     "group_welcome_msg": "",  # 配置新人进群固定欢迎语，不配置则使用随机风格欢迎 
     "trigger_by_self": False,  # 是否允许机器人触发
     "text_to_image": "dall-e-2",  # 图片生成模型，可选 dall-e-2, dall-e-3
@@ -59,9 +59,9 @@ available_setting = {
     "baidu_wenxin_api_key": "",  # Baidu api key
     "baidu_wenxin_secret_key": "",  # Baidu secret key
     # 讯飞星火API
-    "xunfei_app_id": "",  # 讯飞应用ID
-    "xunfei_api_key": "",  # 讯飞 API key
-    "xunfei_api_secret": "",  # 讯飞 API secret
+    "xunfei_app_id": "80289ba2",  # 讯飞应用ID
+    "xunfei_api_key": "23894e5d52e9ed2fa7e61f33a643f2d7",  # 讯飞 API key
+    "xunfei_api_secret": "OWZkOTllNDdlYTM5NGY3ZWNlYWNkYzkz",  # 讯飞 API secret
     # claude 配置
     "claude_api_cookie": "",
     "claude_uuid": "",
@@ -127,7 +127,7 @@ available_setting = {
     # 是否使用全局插件配置
     "use_global_plugin_config": False,
     # 知识库平台配置
-    "use_linkai": True,
+    "use_linkai": False,
     "linkai_api_key": "Link_Tr3z8SULOnqQ8oi0EeQcGPJC8mWL7x7XC5nLo35sBz",
     "linkai_app_code": "",
     "linkai_api_base": "https://api.link-ai.chat",  # linkAI服务地址，若国内无法访问或延迟较高可改为 https://api.link-ai.tech
